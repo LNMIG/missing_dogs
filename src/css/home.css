@@ -225,8 +225,13 @@ body {
 
   }
 
+  .header_logo_image {
+    transform: scale(0.75);
+  }
+
   .header_site_name {
     text-align: center;
+    font-size: 1rem;
   }
 
   .navigation_container {
@@ -247,6 +252,7 @@ body {
 
 
   .footer_container {
+    grid-template-columns: auto;
     grid-template-rows: max-content max-content max-content;
     grid-template-areas:
               "footer_about"
