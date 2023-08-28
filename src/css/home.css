@@ -131,6 +131,9 @@ body {
   grid-area: content_container;
   background-color: #eeeeee;
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #393e46;
 }
@@ -204,7 +207,7 @@ body {
   width: 1.75rem;
   height: 1.75rem;
   margin: auto 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #fff;
 
   display: flex;
@@ -221,7 +224,7 @@ body {
 
 @media screen and (max-width: 768px){
   .main_container {
-    grid-template-rows: 4.5rem 4.5rem auto max-content;
+    grid-template-rows: 4.5rem 2.25rem auto max-content;
   }
 
   .header_logo_image {
@@ -249,6 +252,9 @@ body {
     justify-content: center;
   }
 
+  .navigation_container .missing_now {
+    border: none;
+  }
 
   .footer_container {
     grid-template-columns: auto;
@@ -260,9 +266,17 @@ body {
   }
 
   .footer_about, .footer_copyright, .footer_contact {
+    font-size: 0.75rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+  }
+
+  .linkedin, .github, .twitter, .whatsapp {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin: auto 0.5rem;
+    font-size: 1rem;
   }
 }

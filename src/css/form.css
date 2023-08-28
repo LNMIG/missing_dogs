@@ -17,6 +17,7 @@ form > label {
 
 form .inputgroup {
   width: 65%;
+  height: 1.75rem;
   margin-bottom: 0.25rem;
   display: flex;
   justify-content: space-between;
@@ -25,8 +26,11 @@ form .inputgroup {
 
 form .inputgroup span {
   width: 15%;
-  padding: 0.3rem 0 0.3rem 0.3rem;
-  text-align: start;
+  height: 100%;
+  padding: 0 0 0 0.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   border: 1px solid  #c2c2c2;
@@ -35,10 +39,10 @@ form .inputgroup span {
 
 form .inputgroup input {
   width: 85%;
+  height: 100%;
   border: none;
   border-bottom: 1px solid #c2c2c2;
   outline: none;
-  padding: 0.4rem;
   color: #c2c2c2;
 }
 
