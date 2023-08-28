@@ -1,0 +1,117 @@
+form {
+  width: 90%;
+  height: max-content;
+  margin: 1.5rem auto 1rem auto;
+  padding: 0rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form > label {
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+form .inputgroup {
+  width: 65%;
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .inputgroup span {
+  width: 15%;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+  text-align: start;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border: 1px solid  #c2c2c2;
+  color: #c2c2c2;
+}
+
+form .inputgroup input {
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid #c2c2c2;
+  outline: none;
+  padding: 0.4rem;
+  color: #c2c2c2;
+}
+
+form .inputgroup input::placeholder {
+  color: #c2c2c2;
+}
+
+form .inputgroup input:focus {
+  color: #5f5f5f;
+  border-bottom: 1px solid  #5f5f5f;
+}
+
+form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+}
+
+form input[type="submit"]:hover {
+  background-color: #393e46;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+form textarea {
+  width: 65%;
+  height: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  resize: none;
+  resize: vertical;
+  resize: horizontal;
+}
+
+
+/* ---------------- MEDIA QURIES ---------------- */
+
+@media screen and (max-width: 768px){
+
+  .registry_container h3 {
+    font-size: 1rem;
+  }
+
+  .registry_container p {
+    font-size: 0.75rem;
+  }
+
+  .registry_container form .inputgroup {
+    width: 100%;
+  }
+
+  .registry_container form label {
+    font-size: 0.75rem;
+  }
+
+  .registry_container form .inputgroup span {
+    width: 25%;
+    font-size: 0.75rem;
+  }
+
+  .registry_container form .inputgroup input {
+    width: 75%;
+  }
+
+  .registry_container form input[type="submit"] {
+    font-size: 0.75rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .registry_container form textarea {
+    width: 100%;
+    height: 5rem;
+  }
+}
